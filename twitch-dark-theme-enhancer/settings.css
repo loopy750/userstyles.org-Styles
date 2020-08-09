@@ -1,0 +1,48 @@
+top-nav-purple - Purple
+
+#37266D
+
+top-nav-purple - Grey
+
+#18181B
+
+smooth-chat-scroll - Enable
+
+smooth
+
+smooth-chat-scroll - Disable
+
+auto
+
+channel-info-bar - Grey
+
+    background-color: #18181B !important;
+    border-left: 1px ridge #252126 !important
+
+channel-info-bar - Grey (Gradient)
+
+    background: linear-gradient(0deg, #0E0E10, rgba(0, 0, 0, .25)), linear-gradient(150deg, rgb(46, 46, 48), rgba(0, 0, 0, .25)) !important
+
+channel-info-bar - Purple (Gradient)
+
+    background: linear-gradient(0deg, #0F0E11, rgba(0, 0, 0, .25)), linear-gradient(150deg, #37266D, rgba(0, 0, 0, .25)) !important
+
+channel-info-bar - Default
+
+    background-color: unset
+
+live-time-format - h:mm:ss (Default)
+
+  content: ''
+
+live-time-format - h:mm
+
+  max-width: 33px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: '' !important;
+  display: block !important;
+
+live-time-format - Remove
+
+  display: none !important;
