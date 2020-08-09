@@ -1,0 +1,133 @@
+@-moz-document url-prefix("https://www.youtube.com/watch"), url-prefix("https://www.youtube.com/live_chat") {
+@media screen and (min-width: 1920px) {
+    body,
+    html,
+    ytd-app {
+        overflow: hidden;
+        scrollbar-width: none !important
+    }
+
+    ytd-app {
+        margin-left: -10px !important;
+    }
+
+    .style-scope .ytd-watch-flexy {
+        max-width: none !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        padding-bottom: 0 !important;
+        scrollbar-width: none !important
+    }
+
+    ytd-app {
+        padding-right: 8px !important
+    }
+
+    #top-row,
+    #container.style-scope.ytd-masthead,
+    #clarify-box.style-scope.ytd-watch-flexy,
+    #title .style-scope.ytd-comments-header-renderer,
+    #container.style-scope.ytd-video-secondary-info-renderer,
+    #items.style-scope.ytd-watch-next-secondary-results-renderer,
+    img.branding-img.iv-click-target,
+    .dropdown-trigger.style-scope.ytd-menu-renderer,
+    .style-scope.ytd-menu-renderer.style-default.size-default,
+    ytd-item-section-renderer {
+        display: none !important
+    }
+
+    #primary.style-scope.ytd-watch-flexy {
+        padding-top: 0px !important;
+        padding-right: 10px !important
+    }
+
+    #chat,
+    #columns #secondary {
+        width: auto !important;
+        padding-top: 0px !important
+    }
+
+    .video-stream.html5-main-video {
+        width: 100% !important;
+        height: auto !important
+    }
+}
+
+/* Video */
+img.branding-img.iv-click-target {
+    display: none !important
+}
+
+.ytp-iv-video-content,
+.ytp-storyboard-framepreview-img {
+    width: 100% !important;
+    height: 100% !important
+}
+
+/* Chat */
+#chat.style-scope.ytd-watch-flexy {
+    height: 82.5vh !important
+}
+
+.style-scope.ytd-watch-flexy {
+    border-style: none !important
+}
+
+#panel-pages.style-scope.yt-live-chat-renderer {
+    overflow: hidden;
+    scrollbar-width: none !important
+}
+
+#panel-pages .style-scope.yt-live-chat-renderer {
+    padding: 10px 0px 0px 0px !important;
+    margin: -5px 0px 0px 0px !important
+}
+
+#author-photo.no-transition.style-scope.yt-live-chat-text-message-renderer,
+#author-photo img.style-scope.yt-img-shadow {
+/*[[chat-room-images]]*/
+    margin-right: 10px !important
+}
+
+#item-scroller.animated.yt-live-chat-item-list-renderer #items.yt-live-chat-item-list-renderer {
+    padding-left: 3px !important
+}
+
+#chat-messages #items .style-scope.yt-live-chat-item-list-renderer {
+    margin: 0px -20px 0px -20px !important;
+    scrollbar-width: thin !important;
+/*[[chat-room-font-size]]*/
+    color: #ADADB8 !important;
+    margin-left: -1px !important
+}
+
+#chat-messages .style-scope.yt-live-chat-item-list-renderer {
+    scrollbar-width: thin !important
+}
+
+#chat-messages .style-scope.yt-live-chat-text-message-renderer #author-name.style-scope.yt-live-chat-author-chip {
+    color: /*[[chat-room-a-colour]]*/ !important;
+    font-weight: 600 !important;
+    margin-left: -3px !important
+}
+
+#chat-messages .style-scope.yt-live-chat-text-message-renderer #author-name.style-scope.yt-live-chat-author-chip:after {
+    content: ":" !important
+}
+
+#chat-messages #message {
+    color: #EFEFF1 !important;
+    margin-left: -4px !important
+}
+
+#items.yt-live-chat-item-list-renderer > .yt-live-chat-item-list-renderer:not(:nth-child(odd)) {
+    background-color: #0F0E11 !important
+}
+
+#items.yt-live-chat-item-list-renderer > .yt-live-chat-item-list-renderer:not(:nth-child(even)) {
+    background-color: #18141A !important
+}
+
+/*[[remove-am-pm]]*/
+/*[[darker-theme]]*/
+}
