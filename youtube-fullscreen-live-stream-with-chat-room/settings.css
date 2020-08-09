@@ -1,11 +1,11 @@
-chat-room-font-size - Default
+----------| chat-room-font-size - Default
 
     font-size: inherit !important
 }
 
 #chat-messages #timestamp {
 
-chat-room-font-size - 14px
+----------| chat-room-font-size - 14px
 
     font-size: 14px !important;
 }
@@ -13,21 +13,21 @@ chat-room-font-size - 14px
 #chat-messages #timestamp {
     font-size: 12px !important;
 
-chat-room-images - Default
+----------| chat-room-images - Default
 
     width: 24px !important;
     height: 24px !important;
 
-chat-room-images - 20px
+----------| chat-room-images - 20px
 
     width: 20px !important;
     height: 20px !important;
 
-chat-room-images - Hidden
+----------| chat-room-images - Hidden
 
     display: none !important;
 
-chat-room-a-colour - Red
+----------| chat-room-a-colour - Red
 #FF0000
 - Green
 #008000
@@ -52,9 +52,9 @@ chat-room-a-colour - Red
 - Spring Green
 #00FF7F
 
-darker-theme - Disabled
+----------| darker-theme - Disabled
 
-darker-theme - Enabled
+----------| darker-theme - Enabled
 
 body,
 html,
@@ -66,9 +66,9 @@ ytd-app,
 }
 
 
-remove-am-pm - Default
+----------| remove-am-pm - Default
 
-remove-am-pm - Method 1 (Firefox)
+----------| remove-am-pm - Method 1 (Firefox)
 
 #chat-messages #timestamp {
     max-width: 30px !important;
@@ -80,7 +80,7 @@ remove-am-pm - Method 1 (Firefox)
     margin-right: 3px !important
 }
 
-remove-am-pm - Method 2 (Chrome)
+----------| remove-am-pm - Method 2 (Chrome)
 
 #chat-messages #timestamp {
     max-width: 24px !important;
