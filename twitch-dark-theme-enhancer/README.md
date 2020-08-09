@@ -7,12 +7,13 @@ GitHub: https://github.com/loopy750/Twitch-Dark-Theme-Enhancer
 Notes from latest update:  
 
 
-Style Settings  
+<br>
+<b>Style Settings</b>
 
-Top Navigation Menu: Choose between Purple or the Default grey colour.  
+<b><i>Top Navigation Menu:</i></b> Choose between Purple or the Default grey colour.
 
-Channel Info Background Colour: Select the colour used for the channel information bar below the video.  
+<b><i>Channel Info Background Colour:</i></b> Select the colour used for the channel information bar below the video.
 
-Smooth Chat Scrolling (Experimental): Smooth scrolling effect with new chat room messages. Note: causes jitter while chat is scrolled up.  
+<b><i>Smooth Chat Scrolling (Experimental):</i></b> Smooth scrolling effect with new chat room messages. Note: causes jitter while chat is scrolled up.
 
-Live Time Format (Experimental): Remove the seconds displayed from live time view. Note: Due to limitations this may not function as expected on all systems.
+<b><i>Live Time Format (Experimental):</i></b> Remove the seconds displayed from live time view. Note: Due to limitations this may not function as expected on all systems.
