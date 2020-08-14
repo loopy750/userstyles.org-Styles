@@ -1,14 +1,19 @@
-@-moz-document url-prefix("https://www.youtube.com/watch"), url-prefix("https://www.youtube.com/live_chat") {
-@media screen and (min-width: /*[[screen-resolution]]*/px) {
+@-moz-document url-prefix("https://www.youtube.com/live_chat"), url-prefix("https://www.youtube.com/user"), url-prefix("https://www.youtube.com/watch") {
+@media all and (display-mode: fullscreen) {
     body,
-    html,
-    ytd-app {
+    html {
         overflow: hidden;
         scrollbar-width: none !important
     }
 
-    ytd-app {
-        margin-left: -10px !important;
+    /* Padding left & right of screen */
+    ytd-app ytd-watch-flexy #primary {
+        margin-left: 8px !important;
+        overflow: hidden
+    }
+    ytd-app ytd-watch-flexy #secondary {
+        padding-right: 8px !important;
+        overflow: hidden
     }
 
     .style-scope .ytd-watch-flexy {
@@ -19,42 +24,38 @@
         scrollbar-width: none !important
     }
 
-    ytd-app {
-        padding-right: 8px !important
-    }
-
     #top-row,
     #container.style-scope.ytd-masthead,
     #clarify-box.style-scope.ytd-watch-flexy,
     #title .style-scope.ytd-comments-header-renderer,
     #container.style-scope.ytd-video-secondary-info-renderer,
     #items.style-scope.ytd-watch-next-secondary-results-renderer,
-    img.branding-img.iv-click-target,
     .dropdown-trigger.style-scope.ytd-menu-renderer,
     .style-scope.ytd-menu-renderer.style-default.size-default,
+    img.branding-img.iv-click-target,
     ytd-item-section-renderer {
         display: none !important
     }
 
     #primary.style-scope.ytd-watch-flexy {
         padding-top: 0px !important;
-        padding-right: 10px !important;
-        margin-top: 10px !important;
+        padding-right: 5px !important;
+        margin-top: 8px !important
     }
 
     #chat,
     #columns #secondary {
         width: auto !important;
         padding-top: 0px !important;
-        margin-top: 5px !important;
+        margin-top: 4px !important
     }
 
     ytd-video-primary-info-renderer {
-        opacity: .5 !important;
+        opacity: .5 !important
     }
 
-    .video-stream.html5-main-video {
-        width: 100% !important;
+    ytd-app ytd-watch-flexy #player-container ytd-player #movie_player .video-stream.html5-main-video {
+        width: calc(100% - 1px) !important;
         height: auto !important
     }
 }
@@ -72,10 +73,12 @@ img.branding-img.iv-click-target {
 
 /* Chat */
 #chat.style-scope.ytd-watch-flexy {
-    height: 82.75vh !important
+    min-height: 83.33vh !important
 }
 
-.style-scope.ytd-watch-flexy {
+#info .style-scope.ytd-watch-flexy,
+#meta .style-scope.ytd-watch-flexy,
+#secondary .style-scope.ytd-watch-flexy {
     border-style: none !important
 }
 
@@ -110,57 +113,73 @@ yt-live-chat-text-message-renderer #author-photo img.style-scope.yt-img-shadow {
     scrollbar-width: thin !important
 }
 
+/* Chat room colours */
 #chat-messages .style-scope.yt-live-chat-text-message-renderer #author-name.style-scope.yt-live-chat-author-chip {
     color: /*[[chat-room-a-colour]]*/ !important;
     font-weight: 600 !important;
     margin-left: -3px !important
 }
-
-#chat-messages .style-scope.yt-live-chat-text-message-renderer #author-name.member.style-scope.yt-live-chat-author-chip { 
-    color: #1E9E2F !important;
+#chat-messages .style-scope.yt-live-chat-text-message-renderer #author-name.member.style-scope.yt-live-chat-author-chip {
+    color: #1E9E2F !important
 }
-
-#chat-messages .style-scope.yt-live-chat-text-message-renderer #author-name.moderator.style-scope.yt-live-chat-author-chip { 
-    color: #3E90FE !important;
+#chat-messages .style-scope.yt-live-chat-text-message-renderer[is-highlighted] #author-name.member.style-scope.yt-live-chat-author-chip {
+    color: unset !important
 }
-
-#chat-messages .style-scope.yt-live-chat-text-message-renderer #author-name.owner.style-scope.yt-live-chat-author-chip { 
-    color: #111111 !important;
+#chat-messages .style-scope.yt-live-chat-text-message-renderer #author-name.moderator.style-scope.yt-live-chat-author-chip {
+    color: #3E90FE !important
 }
-
+#chat-messages .style-scope.yt-live-chat-text-message-renderer #author-name.owner.style-scope.yt-live-chat-author-chip {
+    color: #111111 !important
+}
 #input-container .style-scope.yt-live-chat-message-input-renderer[is-highlighted] #author-name.style-scope.yt-live-chat-author-chip {
-    color: #111111 !important;
+    color: #111111 !important
 }
 
-#chat-messages .style-scope.yt-live-chat-text-message-renderer #author-name.style-scope.yt-live-chat-author-chip:after {
+yt-live-chat-author-chip.style-scope.yt-live-chat-text-message-renderer::after {
+    font-weight: 600 !important;
     content: ":" !important
 }
 
 #chat-messages #message {
-    filter: brightness(110%);
+    filter: brightness(108%);
     margin-left: -4px !important
 }
 
-#items.yt-live-chat-item-list-renderer > .yt-live-chat-item-list-renderer:nth-child(2n+0) {
+/* Chat room background colours */
+#chat-messages #items .style-scope.yt-live-chat-item-list-renderer:nth-child(odd) {
+    background-color: #18141A !important
+}
+#chat-messages #items .style-scope.yt-live-chat-item-list-renderer:nth-child(even) {
     background-color: #0F0E11 !important
 }
+#chat-messages #items .style-scope.yt-live-chat-item-list-renderer:nth-child(1n)[author-type=owner] {
+    background-color: #202020 !important
+}
 
-#items.yt-live-chat-item-list-renderer > .yt-live-chat-item-list-renderer:nth-child(2n+1) {
-    background-color: #18141A !important
+yt-live-chat-placeholder-item-renderer.style-scope.yt-live-chat-item-list-renderer {
+    display: none !important
+}
+
+#spinnerContainer.active.style-scope.paper-spinner {
+    display: none !important
 }
 
 /* Deleted */
 yt-live-chat-text-message-renderer[is-deleted] {
-    opacity: .5 !important;
+    opacity: .5 !important
+}
+
+yt-live-chat-text-message-renderer[is-deleted]:hover {
+    opacity: 1 !important
 }
 
 #message.style-scope.yt-live-chat-text-message-renderer {
     display: unset !important;
-    font-style: normal !important;
+    font-style: normal !important
 }
 
 #deleted-state.style-scope.yt-live-chat-text-message-renderer:before {
-    content: ' ' !important;
+    content: ' ' !important
 }
 
 /*[[remove-am-pm]]*/
